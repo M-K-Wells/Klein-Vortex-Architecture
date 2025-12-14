@@ -8,7 +8,7 @@
 ---
 
 ### **1. Overview**
-This repository contains the `system_sim_v7_0` Python source code, serving as the computational proof-of-concept for the "Klein-Vortex Architecture" described in the associated Defensive Publication.
+This repository contains the simulation Python source code, serving as the computational proof-of-concept for the "Klein-Vortex Architecture" described in the associated Defensive Publication.
 
 Specifically, this simulation validates **Embodiment B** (Inductive Direct-Heating in Liquid Hydrocarbons). It provides the mathematical verification that the proposed **Janus-Particle Elevator** mechanism can decouple the residence time from the reactor throughput, enabling the continuous growth of macroscopic Multi-Walled Carbon Nanotube (MWCNT) yarns exceeding **1.0 meter** in length without substrate attachment.
 
@@ -20,7 +20,7 @@ The simulation code resolves the critical "Tear-Off" failure modes inherent to l
 * **Leidenfrost Lift Mechanism:** Models the cubic relationship between inductive power input and vapor bubble expansion (`r_vapor`). The PID controller ($K_p=80000, K_i=5000, K_d=500$) successfully maintains a vapor shell radius of ~12-15 µm, providing neutral buoyancy for the heavy Co-Mo/Co-Fe Janus particles ($\rho$ = 8900 kg/m³) without thermal runaway.
 * **Soft-Start Logic:** Implements a 20-second ramp-up function for the lift velocity to prevent initial PID overshoot, which would otherwise result in "Bubble Collapse" or rapid ejection of the catalyst.
 
-### **3. Critical Operating Parameters (The "Recipe")**
+### **3. Critical Operating Parameters**
 The following parameters were derived via iterative simulation to achieve the 1000 mm milestone:
 
 | Parameter | Value | Physics / Rationale |
